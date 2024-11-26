@@ -9,12 +9,12 @@ class User {
         this.name = name;
     }
 
-    // Public function that saves a user to a database - This should be in it's own class
+    // Public function that saves a user to a database - This violates SRP and should be in it's own class
     public void saveToDatabase() {
         System.out.println("Saving " + name + " to database...");
     }
 
-    // Public function that sends an email to a user - This should be in it's own class
+    // Public function that sends an email to a user - This violates SRP and should be in it's own class
     public void sendEmail() {
         System.out.println("Sending email to " + name + "...");
     }

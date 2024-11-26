@@ -9,8 +9,8 @@ SRP Solved: Seperating those three functions into their own classes, so that eac
 Open/Closed Principle
 Description: A class should be open for extension but closed for modification. This means you should be able to add new functionality through extensions (such as subclasses) without altering existing code.
 Importance: OCP makes code more reusable and flexable. It allows you to introduce new features or make changes to functionality without disrupting existing behavior.
-OCP Violated: 
-OCP Solved: 
+OCP Violated: Modifying the PaymentProcessor class every time a new payment method is added.
+OCP Solved: Using polymorphism and an abstract class for payment methods so new payment types can be added without modifying the core logic.
 
 Liskov Substitution Principle
 Description: Objects of a subclass should be able to replace objects of the parent class without affecting the correctness of the program.
