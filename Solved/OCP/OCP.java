@@ -26,7 +26,7 @@ class PayPalPayment extends PaymentMethod {
 
 // Class responsible for processing payments
 class PaymentProcessor {
-    // Public function to process payments using a specific payment method
+    // Public method to process payments using a specific payment method
     public void process(PaymentMethod paymentMethod, double amount) {
         paymentMethod.processPayment(amount); // Delegates payment processing to the respective method
     }

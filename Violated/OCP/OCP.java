@@ -1,7 +1,7 @@
 package Violated.OCP;
 
 class PaymentProcessor {
-    // Public function that processes payment depending on the payment method.
+    // Public method that processes payment depending on the payment method.
     // Every time you add a new payment method (e.g., "bankTransfer"), you need to modify this class, which violates OCP
     public void processPayment(String paymentMethod, double amount) {
     

@@ -15,5 +15,5 @@ OCP Solved: Using polymorphism and an abstract class for payment methods so new 
 Liskov Substitution Principle
 Description: Objects of a subclass should be able to replace objects of the parent class without affecting the correctness of the program.
 Importance: LSP ensures that inheritance hierarchies are properly designed and that derived classes truly represent "specialized" versions of the base class. This prevents errors or unexpected behavior in the code
-LSP Violated: 
-LSP Solved: 
+LSP Violated: The Manager class requires extra logic that doesn’t behave consistently when substituting it for a regular Employee.
+LSP Solved: Using an abstract Employee class that ensures all subclasses behave in a consistent way and don't break expectations when substituted.
